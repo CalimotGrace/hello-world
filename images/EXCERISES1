@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class new1
+{
+	public new1()
+    {
+Scanner input = new Scanner (System.in);
+
+System.out.println ("*********       ***            *         *");
+System.out.println ("*       *      *    *         ***       * * ");
+System.out.println ("*       *     *      *       *****     *   *");
+System.out.println ("*       *     *      *         *      *      *");
+System.out.println ("*       *     *      *         *     *        *");
+System.out.println ("*       *     *      *         *      *      *");
+System.out.println ("*       *     *      *         *       *    *");
+System.out.println ("*       *      *     *         *         * * ");
+System.out.println ("*********        ***           *          *"); //n
+
+//Declare
+int pizza, topings;
+final double PRICE = 12;
+final double ADD = 1.50;
+
+//Input
+System.out.print("Enter the number of pizza: ");
+pizza = input.nextInt();
+System.out.print("Enter the total number of topings: ");
+topings = input.nextInt();
+
+//Compute
+double pizza1 = pizza * PRICE;
+double topings2 = topings * ADD;
+double result = pizza1 + topings2;
+double result1 = result * 0.05;
+double result2 = pizza1 + topings2 + result1;
+
+//Display
+System.out.println("Receipt: Number of Pizzas: " + pizza);
+System.out.println("Number of Topings: " + topings);
+System.out.println("Cost (incl tax): " + result2);
+
+
+
+    }
+
+	public static void main(String[] args)
+	{
+	 new new1 ();
+	}
+
+}
